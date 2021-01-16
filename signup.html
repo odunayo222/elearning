@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign up</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="transparent z-depth-0">
+                <div class="container">
+                    <a href="#!" class="sidenav-trigger" data-target="side"><i class="material-icons">menu</i></a>
+                    <a href="#!" class="brand-logo"> <i class="material-icons left">import_contacts</i> Logo</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="white-text">Home</a></li>
+                        <li><a href="#courses" class="white-text">Courses</a></li>
+                        <li><a href="contact.html" class="white-text">Contact</a></li>
+                        <li><a href="login.html" class="btn transparent white-text z-depth-0" id="transparent">Log in</a></li>
+                        <li><a href="signup.html" class=" btn orange white-text z-depth-0">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav purple" id="side">
+            <li><a href="index.html" class="white-text">Home</a></li>
+            <li><a href="#courses" class="white-text">Courses</a></li>
+            <li><a href="contact.html" class="white-text">Contact</a></li>
+            <li><a href="login.html" class="btn transparent white-text z-depth-0" id="transparent">Log in</a></li>
+            <li><a href="signup.html" class=" btn orange white-text z-depth-0">Join</a></li>
+        </ul>
+        <div class="row">
+            <div class="container hero">
+               <div class="col s12 l7 hero-text">
+                <h3 class="white-text hide-on-med-and-down"><b>Signup</b></h3>
+                <h4 class="white-text hide-on-large-only"><b>Signup</b></h4>
+                <a href="index.html" class="white-text">Home</a>
+                <span class="white-text"> | </span>
+                <a href="#!" class="white-text">Signup</a>
+               </div>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <div class="container" style="padding-top: 50px;">
+            <!-- <ul class="tabs center">
+                <li class="tab"><a href="#teach">Signup As A Teacher</a></li>
+                <li class="tab"><a href="#learn">Signup As A Student</a></li>
+            </ul> -->
+            <div>
+                <div class="card hide-on-med-and-down" id="signup-lg">
+                    <div class="row">
+                        <div class="col s12 l6 login ">
+                            <div class="card-content">
+                                <p id="error" style="text-align: center;"></p>
+                                <h6 id="success" style="text-align: center;"></h6>
+                                <h5 class="indigo-text center-align">Hello, friend!</h5>
+                                <form id="handleSignup">
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">account_circle</i>
+                                         <input type="text" id="user_name" required>
+                                         <label for="user_name">Username or email</label>
+                                         <p id="u-error" style="text-align: center;"></p>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">class</i>
+                                        <input type="text" id="class" required>
+                                        <label for="class">Class</label>
+                                        <p id="class" style="text-align: center;"></p>
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="material-icons prefix left">note</i>
+                                        <input type="text" id="strength" required>
+                                        <label for="strength">Subject(s) you can teach OR want to learn</label>
+                                    </div>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">lock</i>
+                                         <input type="password" id="password" required>
+                                         <label for="password">Password </label>
+                                         <p id="psd-error" style="text-align: center;"></p>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">school</i>
+                                        <input type="text" id="school" required>
+                                        <label for="school">School</label>
+                                     </div>
+                                     <div id="with-gap">
+                                        <label>
+                                            <input type="radio" name="gender" class="with-gap">
+                                            <span> Male</span>
+                                        </label>
+                                        <label>
+                                           <input type="radio" name="gender" class="with-gap">
+                                           <span>Female</span>
+                                       </label>
+                                     </div>
+                                    <br><br>
+                                    <div id="checkbox">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span> Signup to teach</span>
+                                        </label>
+                                        <br>
+                                        <label>
+                                           <input type="checkbox" class="checkbox">
+                                           <span>Signup to Learn</span>
+                                       </label>
+                                    </div>
+                                   <br><br>
+                                      <button type="submit"class="btn orange btn-large" id="submit">Signup</button>
+                                      <p  style="padding-top: 10px;">Have an account already? <a href="login.html">Login.</a></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col s12 l6 purple signup-text">
+                            <div class="card-image">
+                                <h5 class="white-text center-align">Glad to see you!</h5>
+                                <p class="white-text center-align">Kindly create an account to teach the subject you are good at OR learning from others!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card hide-on-large-only" id="signup-sm">
+                    <div class="row">
+                        <div class="col s12 l6 purple" style="background: linear-gradient(#c054ff, #007bff, #c054ff);">
+                            <div class="card-image">
+                                <h5 class="white-text center-align">Glad to see you!</h5>
+                                <p class="white-text center-align">Kindly create an account to teach the subject you are good at OR learning from others!</p>
+                            </div>
+                        </div>
+                        <div class="col s12 l6 signup ">
+                            <div class="card-content">
+                                <p id="error" style="text-align: center;"></p>
+                                <h5 id="success" style="text-align: center;"></h5>
+                                <h5 class="indigo-text center-align">Hello, friend!</h5>
+                                <form>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">account_circle</i>
+                                         <input type="text" id="name" required>
+                                         <label for="name">Username or Email</label>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">class</i>
+                                        <input type="text" id="class" required>
+                                        <label for="class">Class</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <i class="material-icons prefix left">note</i>
+                                        <input type="text" id="strength" required>
+                                        <label for="strength">Subject(s) you can teach OR want to learn</label>
+                                    </div>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">lock</i>
+                                         <input type="password" id="password" required>
+                                         <label for="password">Password</label>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">school</i>
+                                        <input type="text" id="school" required>
+                                        <label for="school">School</label>
+                                     </div>
+                                     <label>
+                                         <input type="radio" name="gender" class="with-gap purple">
+                                         <span> Male</span>
+                                     </label>
+                                     <label>
+                                        <input type="radio" name="gender" class="with-gap purple">
+                                        <span>Female</span>
+                                    </label>
+                                    <br><br>
+                                      <button type="submit"class="btn orange btn-large">Signup</button>
+                                      <br><br>
+                                      <div>
+                                        <p style="margin-top: 10px !important;">Have an account already? <a href="login.html">Login.</a></p>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="learn">
+                <div class="card hide-on-med-and-down" id="login">
+                    <div class="row">
+                        <div class="col s12 l6 login ">
+                            <div class="card-content">
+                                <h5 class="indigo-text center-align">Hello, friend!</h5>
+                                <form>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">account_circle</i>
+                                         <input type="text" id="name" required>
+                                         <label for="name">Username or Email</label>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">class</i>
+                                        <input type="text" id="class" required>
+                                        <label for="class">Class</label>
+                                    </div>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">lock</i>
+                                         <input type="password" id="password" required>
+                                         <label for="password">Password</label>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">school</i>
+                                        <input type="text" id="school" required>
+                                        <label for="school">School</label>
+                                     </div>
+                                     <label>
+                                         <input type="radio" name="gender" class="with-gap">
+                                         <span> Male</span>
+                                     </label>
+                                     <label>
+                                        <input type="radio" name="gender" class="with-gap">
+                                        <span>Female</span>
+                                    </label>
+                                    <br><br>
+                                      <button type="submit"class="btn orange btn-large">Login</button>
+                                      <p  style="padding-top: 10px;">Have an account already? <a href="login.html">Login.</a></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col s12 l6 purple signup-text">
+                            <div class="card-image">
+                                <h5 class="white-text center-align">Glad to see you!</h5>
+                                <p class="white-text center-align">Kindly create an account to learn from others!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card hide-on-large-only" id="login">
+                    <div class="row">
+                        <div class="col s12 l6 purple" style="background: linear-gradient(#c054ff, #007bff, #c054ff);">
+                            <div class="card-image">
+                                <h5 class="white-text center-align">Glad to see you!</h5>
+                                <p class="white-text center-align">Kindly create an account to learn from others!</p>
+                            </div>
+                        </div>
+                        <div class="col s12 l6 login ">
+                            <div class="card-content">
+                                <h5 class="indigo-text center-align">Hello, friend!</h5>
+                                <form>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">account_circle</i>
+                                         <input type="text" id="name" required>
+                                         <label for="name">Username or Email</label>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">class</i>
+                                        <input type="text" id="class" required>
+                                        <label for="class">Class</label>
+                                    </div>
+                                     <div class="input-field">
+                                         <i class="material-icons prefix left">lock</i>
+                                         <input type="password" id="password" required>
+                                         <label for="password">Password</label>
+                                     </div>
+                                     <div class="input-field">
+                                        <i class="material-icons prefix left">school</i>
+                                        <input type="text" id="school" required>
+                                        <label for="school">School</label>
+                                     </div>
+                                     <label>
+                                         <input type="radio" name="gender" class="with-gap purple">
+                                         <span> Male</span>
+                                     </label>
+                                     <label>
+                                        <input type="radio" name="gender" class="with-gap purple">
+                                        <span>Female</span>
+                                    </label>
+                                    <br><br>
+                                      <button type="submit"class="btn orange btn-large">Login</button>
+                                      <br><br>
+                                      <div>
+                                        <p style="margin-top: 10px !important;">Have an account already? <a href="login.html">Login.</a></p>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>-->
+        </div>
+    </main>
+    <footer class="page-footer indigo">
+        <div class="row">
+            <div class="container">
+                <h4><i class="material-icons left">import_contacts</i> Logo</h4>
+                <div class="col l4 s12 pull-l1">
+                    <p class="grey-text text-lighten-4 justify"><i class="material-icons left">add_location</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="grey-text text-lighten-4 justify">
+                        <i class="material-icons left">call</i> 090966363373
+                    </p>
+                    <p class="grey-text text-lighten-4 justify">
+                        <i class="material-icons left">mail</i> mayowaakanke@gmail.com
+                    </p>
+                </div>
+                <div class="col s12 l2">
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!"><p>About Us</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href=""><p>What We Do</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!"><p>FAQ</p></a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l3">
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="course.html"><p>Courses</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href="signup.html"><p>Join</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href="contact.html"><p>Contact Us</p></a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l3">
+                    <a href="#!" class="btn btn-floating transparent z-depth-0" style="border: 1px solid white; margin: 5px"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#!" class="btn btn-floating transparent z-depth-0" style="border: 1px solid white; margin: 5px"><i class="fab fa-twitter"></i></a>
+                    <a href="#!" class="btn btn-floating transparent z-depth-0" style="border: 1px solid white; margin: 5px"><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        <div class="footer-copyright">
+            <div class="container">
+            <p class="right hide-on-med-and-down">© 2020 Copyright Text</p>
+            <p class="center-align hide-on-large-only">© 2020 Copyright Text</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="assets/js/signup.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+         $('.datepicker').datepicker();
+         $('.timepicker').timepicker();
+         $('.parallax').parallax();
+         $('.tabs').tabs();
+    
+         $(window).scroll(function() {
+              if($(window).scrollTop() > 100) { 
+                  $('nav').addClass('nav');
+              } else {
+                  $('nav').removeClass('nav');
+              }
+            });
+    
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+            });
+        })
+     </script>
+</html>

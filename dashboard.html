@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css" integrity="sha512-SUJFImtiT87gVCOXl3aGC00zfDl6ggYAw5+oheJvRJ8KBXZrr/TMISSdVJ5bBarbQDRC2pR5Kto3xTR0kpZInA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>E.learning | Dashboard</title>
+    <style>
+      
+   @media screen and (min-width: 1000px){
+    body{
+      padding-left: 300px !important;
+    }
+   }
+    ul{
+      color: white !important;
+    }
+    .container{
+      margin:0 auto;
+      max-width:1280px;
+      width:90%;
+    }
+    /* body {
+      color: white;
+    } */
+    /* @media only screen and (min-width: 601px){
+      .container {
+        width: 90% !important;
+      }
+      }
+    @media only screen and (min-width: 993px){
+      .container {
+        width:80% !important;
+      }
+    } */
+    @media only screen and (max-width: 480px){
+       
+    }
+    body {
+      background-color: #212529;
+    }
+    .icon {
+      font-size: 40px !important;
+    }
+    .black{
+      background-color: #212529 !important;
+    }
+    .grey{
+      background-color: #32325d2c !important;
+    }
+    .card .col {
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+}
+nav{
+  padding: 10px;
+}
+.purple {
+  background: linear-gradient(#c054ff, #007bff) !important;
+}
+</style>
+</head>
+<body class="black">
+    <div class="container hide-on-large-only">
+      </div>
+      
+      <ul class="sidenav sidenav-fixed purple z-depth-0 " style="background: linear-gradient(#c054ff, #007bff, #c054ff,  #007bff, #c054ff,  #007bff) !important;">
+        <div class="container">
+          <h3><i class="material-icons icon left">import_contacts</i>Logo</h3>
+        </div>
+          <br><br><br>
+        <!-- <li><div class="user-view">
+          <a href="#!"><img src="assets/images/avatar.png" class="avatar responsive-img"></a>
+          <p class="center-align white-text" style="margin-top: -10px;"><b><span id="dynamic_username-lg"></span></b></p>
+        </div></li> -->
+        <li><a href="#!" class="purple-text btn white" style="border-radius: 30px;"><i class="material-icons purple-text ">home</i>Dashboard</a></li>
+        <li><a href="./profile.html" class="white-text"><i class="material-icons white-text">perm_identity</i>Profile</a></li>
+        <li><a href="./profile.html" class="white-text"><i class="material-icons white-text">note</i>Lectures</a></li>
+        <li><a href="./cart.html" class="white-text"><i class="material-icons white-text">school</i>Teachers</a></li>
+        <li><a href="./notification.html" class="white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
+        <li><a href="./login.html" class="white-text">Log out <i class="material-icons white-text left" >arrow_backward</i></a></li>
+      </ul>
+      
+      <ul class="sidenav purple" id="side">
+        <div class="container">
+          <h3><i class="material-icons icon left">import_contacts</i>Logo</h3>
+        </div>
+          <br><br><br> 
+        <!-- <li><div class="user-view">
+          <a href="#!"><img src="assets/images/avatar.png" class="avatar responsive-img"></a>
+          <p class="center-align white-text" style="margin-top: -10px;"><b><span id="dynamic_username-sm"></span></b></p>
+        </div></li> -->
+        <li><a href="#!" class="purple-text btn white" style="border-radius: 30px;"><i class="material-icons purple-text">home</i>Dashboard</a></li>
+        <li><a href="./profile.html" class="white-text"><i class="material-icons white-text">perm_identity</i>Profile</a></li>
+        <li><a href="./profile.html" class="white-text"><i class="material-icons white-text">note</i>Lectures</a></li>
+        <li><a href="./cart.html" class="white-text"><i class="material-icons white-text">school</i>Cart</a></li>
+        <li><a href="./notification.html" class="white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
+        <li><a href="./login.html" class="white-text" style="margin-top: 9px;">Log out <i class="material-icons white-text left" >arrow_backward</i></a></li>
+        
+      </ul> 
+      <div class="container">
+        <nav class="transparent z-depth-0 right">
+          <div class="nav-wrapper">
+       <a href="#!" class="sidenav-trigger" data-target="side"><i class="material-icons purple-text">menu</i></a>
+       <a href="#!" class="brand-logo purple-text" style="text-shadow: 0 0 3px #FF0000, 0 0 6px #0000FF;">Dashboard</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#"><i class="material-icons white-text">search</i></a></li>
+              <li><a href="#"><i class="material-icons white-text">notifications</i></a></li>
+              <li><a href="#"><img src="assets/images/avatar.png" class="responsive-img cirle" height="50px" width="40px" style="padding-top: 13px;"></a></li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="row row1" id="row" style="padding-top: 100px !important;">
+          <div class="col s12 l5">
+            <div class="card purple card-top">
+              <h5 class="white-text"> <i class="material-icons left">school</i> Teachers <span class="
+                right">5</span></h5>
+            </div>
+          </div>
+          <div class="col s12 l5 offset-l1">
+            <div class="card purple card-top">
+              <h5 class="white-text"> <i class="material-icons left">edit</i> Students <span class="
+                right">20</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div class="card grey" id="progress">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+            <div class="col s12 l5">
+              <div class="card grey" style="padding: 20px;">
+                  <canvas id="doughnut-chartcanvas-1" height="400px" width="500px"></canvas>
+              </div>
+            </div>
+            <div class="col s12 l6">
+              <div class="card grey">
+                  <canvas id="barChart" height="300px"></canvas>
+              </div>
+            </div>
+        </div>
+      </div>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+})
+</script>
+<script>
+    $(document).ready(function (){
+     $('.datepicker').datepicker(); 
+     $('.timepicker').timepicker();
+     $('.parallax').parallax();
+     $('.collapsible').collapsible();
+     $('.scrollspy').scrollSpy();
+
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+        });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+        });
+
+    })
+
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['Maths', 'Chemistry', 'Physics', 'English', 'Biology', 'Economics', 'F/Maths'],
+        datasets: [{
+            label: 'Progress',
+            color: '#c054ff',
+            borderColor: '#c054ff',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+var ctx1 = $("#doughnut-chartcanvas-1");
+$(function(){
+
+//get the doughnut chart canvas
+var ctx1 = $("#doughnut-chartcanvas-1");
+
+//doughnut chart data
+var data1 = {
+  labels: ["Students", "Teachers"],
+  datasets: [
+    {
+      label: "TeamA Score",
+      data: [70, 40],
+      backgroundColor: [
+        "#007bff",
+        "#c054ff"
+        
+      ],
+      borderColor: [
+        "#CDA776",
+        "#989898"
+        
+      ],
+      borderWidth: [1, 1]
+    }
+  ]
+};
+
+
+//options
+var options = {
+  responsive: true,
+  title: {
+    display: true,
+    // position: "top",
+    fontSize: 18,
+    fontColor: "#fff"
+  },
+  legend: {
+    display: true,
+    // position: "bottom",
+    labels: {
+      fontColor: "#fff",
+      fontSize: 16
+    }
+  }
+};
+
+//create Chart class object
+var chart1 = new Chart(ctx1, {
+  type: "doughnut",
+  data: data1,
+  options: options
+});
+
+});
+
+var ctx = document.getElementById('barChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Maths', 'Physics', 'Biology', 'English'],
+        datasets: [{
+            label: 'Teachers',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+                
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)'
+                
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+
+    
+});
+
+ </script>
+</html>

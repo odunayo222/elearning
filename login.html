@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="transparent z-depth-0">
+                <div class="container">
+                    <a href="#!" class="sidenav-trigger" data-target="side"><i class="material-icons">menu</i></a>
+                    <a href="#!" class="brand-logo"> <i class="material-icons left">import_contacts</i> Logo</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="white-text">Home</a></li>
+                        <li><a href="#courses" class="white-text">Courses</a></li>
+                        <li><a href="contact.html" class="white-text">Contact</a></li>
+                        <li><a href="login.html" class="btn transparent white-text z-depth-0" id="transparent">Log in</a></li>
+                        <li><a href="signup.html" class=" btn orange white-text z-depth-0">Join</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav purple" id="side">
+            <li><a href="index.html" class="white-text">Home</a></li>
+            <li><a href="#courses" class="white-text">Courses</a></li>
+            <li><a href="contact.html" class="white-text">Contact</a></li>
+            <li><a href="login.html" class="btn transparent white-text z-depth-0" id="transparent">Log in</a></li>
+            <li><a href="signup.html" class=" btn orange white-text z-depth-0">Join</a></li>
+        </ul>
+        <div class="row">
+            <div class="container hero">
+               <div class="col s12 l7 hero-text">
+                <h3 class="white-text hide-on-med-and-down"><b>login</b></h3>
+                <h4 class="white-text hide-on-large-only"><b>login</b></h4>
+                <a href="index.html" class="white-text">Home</a>
+                <span class="white-text"> | </span>
+                <a href="#!" class="white-text">Login</a>
+               </div>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <div class="container">   
+            <div class="card hide-on-med-and-down" id="login">
+                <div class="row">
+                    <div class="col s12 l6 login ">
+                        <div class="card-content">
+                            <p id="error"></p>
+                            <h5 class="indigo-text center-align">Hello!</h5>
+                            <p class="center-align">Login to your account</p>
+                            <form id="handleSignin">
+                                 <div class="input-field">
+                                     <i class="material-icons prefix left">account_circle</i>
+                                     <input id="lnames" type="text" class="validate" required>
+                                     <label for="lnames">Username</label>
+                                 </div>
+                                 <div class="input-field">
+                                     <i class="material-icons prefix left">lock</i>
+                                     <input id="lpassword" type="password" class="validate" required>
+                                     <label for="lpassword">Password </label>
+                                 </div>
+                                  <button type="submit"class="btn orange btn-large" id="submit">Login</button>
+                                  <div>
+                                    <p style="margin-top: 10px;">New to this platform? <a href="signup.html">Create an account.</a></p>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s12 l6 purple login-text">
+                        <div class="card-image">
+                            <h5 class="white-text center-align">Welcome Back!</h5>
+                            <p class="white-text center-align">Kindly login to your account to see all courses available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card hide-on-large-only" id="login">
+                <div class="row">
+                    <div class="col s12 l6 purple" style="background: linear-gradient(#c054ff, #007bff, #c054ff);">
+                        <div class="card-image">
+                            <h5 class="white-text center-align">Welcome Back!</h5>
+                            <p class="white-text center-align">Kindly login to your account to see all courses available</p>
+                        </div>
+                    </div>
+                    <div class="col s12 l6 login ">
+                        <div class="card-content">
+                            <h5 class="indigo-text center-align">Hello!</h5>
+                            <p class="center-align">Login to your account</p>
+                            <form>
+                                 <div class="input-field">
+                                     <i class="material-icons prefix left">account_circle</i>
+                                     <input type="text" id="name" required>
+                                     <label for="name">Username or Email</label>
+                                 </div>
+                                 <div class="input-field">
+                                     <i class="material-icons prefix left">lock</i>
+                                     <input type="password" id="password" required>
+                                     <label for="password">Password</label>
+                                 </div>
+                                  <button type="submit"class="btn orange btn-large" id="submit">Login</button>
+                                  <div>
+                                    <p style="margin-top: 10px;">New to this platform? <a href="signup.html">Create an account.</a></p>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer indigo">
+        <div class="row">
+            <div class="container">
+                <h4><i class="material-icons left">import_contacts</i> Logo</h4>
+                <div class="col l4 s12 pull-l1">
+                    <p class="grey-text text-lighten-4 justify"><i class="material-icons left">add_location</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="grey-text text-lighten-4 justify">
+                        <i class="material-icons left">call</i> 090966363373
+                    </p>
+                    <p class="grey-text text-lighten-4 justify">
+                        <i class="material-icons left">mail</i> mayowaakanke@gmail.com
+                    </p>
+                </div>
+                <div class="col s12 l2">
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!"><p>About Us</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href=""><p>What We Do</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!"><p>FAQ</p></a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l3">
+                    <ul>
+                    <li><a class="grey-text text-lighten-3" href="course.html"><p>Courses</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href="signup.html"><p>Join</p></a></li>
+                    <li><a class="grey-text text-lighten-3" href="contact.html"><p>Contact Us</p></a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l3">
+                    <a href="#!" class="btn btn-floating transparent z-depth-0" style="border: 1px solid white; margin: 5px"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#!" class="btn btn-floating transparent z-depth-0" style="border: 1px solid white; margin: 5px"><i class="fab fa-twitter"></i></a>
+                    <a href="#!" class="btn btn-floating transparent z-depth-0" style="border: 1px solid white; margin: 5px"><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+        <div class="footer-copyright">
+            <div class="container">
+            <p class="right hide-on-med-and-down">© 2020 Copyright Text</p>
+            <p class="center-align hide-on-large-only">© 2020 Copyright Text</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="assets/js/signin.js"></script>
+<script>
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+     $('.datepicker').datepicker();
+     $('.timepicker').timepicker();
+     $('.parallax').parallax();
+
+     $(window).scroll(function() {
+          if($(window).scrollTop() > 100) { 
+              $('nav').addClass('nav');
+          } else {
+              $('nav').removeClass('nav');
+          }
+        });
+
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+        });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+        });
+    })
+ </script>
+</html>  
+</body>
+</html>

@@ -1,0 +1,91 @@
+header {
+    background-image: url(../images/header-img2.png);
+    background-position: center;
+    background-size: cover;
+    /* min-height: 600px; */
+    height: 50vh;
+
+}
+body {
+    font-family: 'Gabriela', Arial, Helvetica, sans-serif;
+ }
+ nav .btn, main .btn {
+    border-radius: 7px;
+}
+.orange {
+    background-color: #FF9F67 !important;
+}
+#transparent {
+    border: 1px solid white !important;
+}
+.orange:hover {
+    background-color: #c054ff !important;
+}
+#transparent:hover {
+    background-color: #FF9F67 !important;
+    border: none !important;
+}
+nav a.btn{
+    height: 50px;
+    width: 100px;
+    padding-top: 7px;
+}
+nav a > i{
+    font-size: 40px !important;
+    margin-top: 4px !important;
+}
+nav {
+    padding: 20px auto;
+}
+.purple {
+    background-color: #c054ff !important;
+}
+.justify{
+    text-align: justify;
+}
+.indigo-text {
+    color: #4255A4 !important;
+}
+.orange-text {
+    color: #FF9F67 !important;
+}
+.indigo{
+    background-color: #4255A4 !important;
+}
+.hero{
+    margin-top: 60px;
+}
+#contact{
+    padding: 30px;
+    margin-top: 50px;
+}
+.nav {
+    background: linear-gradient(#c054ff, #007bff);
+}
+.login, .signup{
+    margin-top: 50px;
+}
+.login-text {
+    height: 450px;
+    background: linear-gradient(#c054ff, #007bff, #c054ff);
+    padding-top: 150px !important;
+}
+#login{
+    margin: 10px 0px;
+}
+.signup-text {
+    height: 770px;
+    padding-top: 200px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    background: linear-gradient(#c054ff, #007bff, #c054ff);
+}
+.courses {
+    margin: 50px 0px;
+}
+.card-top {
+   padding: 30px !important;
+}
+.card-top i {
+    font-size: 30px !important;
+}
