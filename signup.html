@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +55,14 @@
                 <li class="tab"><a href="#learn">Signup As A Student</a></li>
             </ul> -->
             <div>
-                <div class="card hide-on-med-and-down" id="signup-lg">
+                <div class="card" id="signup-lg">
                     <div class="row">
+                        <div class="col s12 l6 purple signup-text">
+                            <div class="card-image">
+                                <h5 class="white-text center-align">Glad to see you!</h5>
+                                <p class="white-text center-align">Kindly create an account to teach the subject you are good at OR learning from others!</p>
+                            </div>
+                        </div>
                         <div class="col s12 l6 login ">
                             <div class="card-content">
                                 <p id="error" style="text-align: center;"></p>
@@ -118,74 +125,12 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col s12 l6 purple signup-text">
-                            <div class="card-image">
-                                <h5 class="white-text center-align">Glad to see you!</h5>
-                                <p class="white-text center-align">Kindly create an account to teach the subject you are good at OR learning from others!</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
     
-                <div class="card hide-on-large-only" id="signup-sm">
-                    <div class="row">
-                        <div class="col s12 l6 purple" style="background: linear-gradient(#c054ff, #007bff, #c054ff);">
-                            <div class="card-image">
-                                <h5 class="white-text center-align">Glad to see you!</h5>
-                                <p class="white-text center-align">Kindly create an account to teach the subject you are good at OR learning from others!</p>
-                            </div>
-                        </div>
-                        <div class="col s12 l6 signup ">
-                            <div class="card-content">
-                                <p id="error" style="text-align: center;"></p>
-                                <h5 id="success" style="text-align: center;"></h5>
-                                <h5 class="indigo-text center-align">Hello, friend!</h5>
-                                <form>
-                                     <div class="input-field">
-                                         <i class="material-icons prefix left">account_circle</i>
-                                         <input type="text" id="name" required>
-                                         <label for="name">Username or Email</label>
-                                     </div>
-                                     <div class="input-field">
-                                        <i class="material-icons prefix left">class</i>
-                                        <input type="text" id="class" required>
-                                        <label for="class">Class</label>
-                                    </div>
-                                    <div class="input-field">
-                                        <i class="material-icons prefix left">note</i>
-                                        <input type="text" id="strength" required>
-                                        <label for="strength">Subject(s) you can teach OR want to learn</label>
-                                    </div>
-                                     <div class="input-field">
-                                         <i class="material-icons prefix left">lock</i>
-                                         <input type="password" id="password" required>
-                                         <label for="password">Password</label>
-                                     </div>
-                                     <div class="input-field">
-                                        <i class="material-icons prefix left">school</i>
-                                        <input type="text" id="school" required>
-                                        <label for="school">School</label>
-                                     </div>
-                                     <label>
-                                         <input type="radio" name="gender" class="with-gap purple">
-                                         <span> Male</span>
-                                     </label>
-                                     <label>
-                                        <input type="radio" name="gender" class="with-gap purple">
-                                        <span>Female</span>
-                                    </label>
-                                    <br><br>
-                                      <button type="submit"class="btn orange btn-large">Signup</button>
-                                      <br><br>
-                                      <div>
-                                        <p style="margin-top: 10px !important;">Have an account already? <a href="login.html">Login.</a></p>
-                                      </div>
-                                </form>
-                            </div>
-                        </div>
+                
                        
                     </div>
-                </div>
             </div>
 
             <!-- <div id="learn">
@@ -335,7 +280,44 @@
             </div>
         </div>
     </footer>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/materialize.min.js"></script>
 <script src="assets/js/signup.js"></script>
